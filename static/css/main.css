@@ -1,0 +1,289 @@
+:root {
+  --accent: #860033;
+  --bg: #ffffff;
+  --text: #222222;
+  --muted: #666666;
+  --max-width: 960px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header / Nav */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.97);
+  border-bottom: 1px solid #eee;
+  backdrop-filter: blur(6px);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 0;
+}
+
+.brand a {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+.brand .tagline {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.nav a {
+  margin-left: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Sections */
+
+.site-main {
+  padding-bottom: 3rem;
+}
+
+.section {
+  padding: 3rem 0 1rem;
+}
+
+.section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 0.2rem;
+}
+
+/* About */
+
+.section-about {
+  padding-top: 4rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.section-about p {
+  line-height: 1.6;
+}
+
+.links {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.links a {
+  border-bottom: 1px solid transparent;
+}
+
+.links a:hover {
+  border-color: var(--accent);
+}
+
+.profile-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  background: #f5f5f5 center/cover no-repeat url("/img/profile.jpg");
+}
+
+/* News */
+
+.news-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: 70px minmax(0, 1fr);
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.news-date {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.news-text {
+  line-height: 1.5;
+}
+
+.section-actions {
+  margin-top: 1.5rem;
+}
+
+/* Publications */
+
+.pub {
+  margin-bottom: 1.8rem;
+}
+
+.pub-venue {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+.pub-title {
+  margin: 0.3rem 0 0.15rem;
+  font-size: 1.05rem;
+}
+
+.pub-authors {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+
+.pub-tldr {
+  margin: 0 0 0.4rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.pub-links a {
+  margin-right: 0.8rem;
+  font-size: 0.9rem;
+}
+
+/* Projects */
+
+.project {
+  margin-bottom: 1.5rem;
+}
+
+.project-title {
+  margin-bottom: 0.3rem;
+}
+
+.project-tldr {
+  margin: 0 0 0.3rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.project-link {
+  font-size: 0.9rem;
+}
+
+/* CV */
+
+.section-cv p {
+  line-height: 1.6;
+}
+
+/* Buttons */
+
+.btn-primary,
+.btn-ghost {
+  display: inline-block;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--accent);
+}
+
+.btn-ghost:hover {
+  background: rgba(134, 0, 51, 0.05);
+  text-decoration: none;
+}
+
+/* Footer */
+
+.site-footer {
+  border-top: 1px solid #eee;
+  padding: 1rem 0 1.5rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  .nav a {
+    margin-left: 0;
+    margin-right: 0.9rem;
+  }
+
+  .about-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .profile-wrapper {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="brand">
+        <a href="{{ "/" | relURL }}">{{ .Site.Params.name }}</a>
+        <span class="tagline">{{ .Site.Params.tagline }}</span>
+      </div>
+      <nav class="nav">
+        <a href="{{ "/" | relURL }}#about">About</a>
+        <a href="{{ "/" | relURL }}#news">News</a>
+        <a href="{{ "/" | relURL }}#publications">Publications</a>
+        <a href="{{ "/" | relURL }}#projects">Projects</a>
+        <a href="{{ "/cv/Ahmad_CV.pdf" | relURL }}" target="_blank" rel="noopener">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      © {{ now.Year }} {{ .Site.Params.name }}.
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "Ahmad"
+theme = ""
+enableRobotsTXT = true
+
+[params]
+  accentColor = "#860033"
+  name = "Ahmad"
+  tagline = "CS & Applied Math Student"

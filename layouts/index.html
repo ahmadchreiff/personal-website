@@ -1,0 +1,120 @@
+{{ define "title" }}{{ .Site.Params.name }} – {{ .Site.Params.tagline }}{{ end }}
+
+{{ define "main" }}
+<div class="container home">
+
+  <!-- About -->
+  <section id="about" class="section section-about">
+    <div class="about-grid">
+      <div>
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm Ahmad. I'm a third-year Computer Science and Applied Mathematics student.
+          This is placeholder text for now; I'll update it later with more details about my
+          research interests, projects, and academic background.
+        </p>
+
+        <div class="links">
+          <a href="#" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="#" target="_blank" rel="noopener">GitHub</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:placeholder@example.com">Email</a>
+        </div>
+      </div>
+
+      <div class="profile-wrapper">
+        <div class="profile-photo">
+          <!-- Put a file at static/img/profile.jpg later -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Selected News -->
+  <section id="news" class="section">
+    <h2>Selected News</h2>
+
+    <div class="news-list">
+      <div class="news-item">
+        <div class="news-date">09/25</div>
+        <div class="news-text">
+          Placeholder news item about a recent paper, talk, or project update.
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">07/25</div>
+        <div class="news-text">
+          Another placeholder update that I can replace later with something real.
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">04/25</div>
+        <div class="news-text">
+          Short description of some milestone or achievement.
+        </div>
+      </div>
+    </div>
+
+    <div class="section-actions">
+      <a href="#news" class="btn-ghost">Show All</a>
+      <!-- later this can link to /news/ -->
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="section">
+    <h2>Publications</h2>
+
+    <article class="pub">
+      <div class="pub-venue">Conference Name 202X</div>
+      <h3 class="pub-title">Title of a Placeholder Paper</h3>
+      <div class="pub-authors">A. Ahmad, B. Lastname, C. Lastname</div>
+      <p class="pub-tldr">
+        Short TLDR for this placeholder publication. I will replace this with a real abstract
+        or summary later.
+      </p>
+      <div class="pub-links">
+        <a href="#">Paper</a>
+        <a href="#">Code</a>
+      </div>
+    </article>
+
+    <article class="pub">
+      <div class="pub-venue">Journal Name 202X</div>
+      <h3 class="pub-title">Another Placeholder Work</h3>
+      <div class="pub-authors">A. Ahmad, D. Collaborator</div>
+      <p class="pub-tldr">
+        Another short TLDR describing the core idea and contribution of the work.
+      </p>
+      <div class="pub-links">
+        <a href="#">Paper</a>
+        <a href="#">Code</a>
+      </div>
+    </article>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3 class="project-title">Project One</h3>
+      <p class="project-tldr">
+        Short one-sentence description of a project. This might be a research project,
+        course project, or personal tool.
+      </p>
+      <a href="#" class="project-link">Link</a>
+    </div>
+
+    <div class="project">
+      <h3 class="project-title">Project Two</h3>
+      <p class="project-tldr">
+        Another placeholder project. I will later link to GitHub, a demo, or a paper.
+      </p>
+      <a href="#" class="project-link">Link</a>
+    </div>
+
+  </section>
+
+</div>
+{{ end }}

@@ -1,0 +1,21 @@
+{{ define "title" }}CV - {{ .Site.Params.name }}{{ end }}
+
+{{ define "main" }}
+<div class="container section section-cv">
+  <h2>Curriculum Vitae</h2>
+  <p>
+    This is Ahmad's CV page. I'll eventually describe my background, research,
+    industry experience, and teaching here.
+  </p>
+
+  <p>
+    You can download my CV as a PDF:
+  </p>
+
+  <p>
+    <a class="btn-primary" href="{{ "/cv/Ahmad_CV.pdf" | relURL }}" target="_blank" rel="noopener">
+      Download CV (PDF)
+    </a>
+  </p>
+</div>
+{{ end }}
