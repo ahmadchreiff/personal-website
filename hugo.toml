@@ -1,7 +1,6 @@
 baseURL = "https://ahmadchreiff.github.io/personal-website/"
 languageCode = "en-us"
 title = "Ahmad"
-theme = ""
 enableRobotsTXT = true
 
 [params]
